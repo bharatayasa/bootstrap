@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>bootstrap</title>
+</head>
+
+<style>
+    html {
+        scroll-behavior: smooth;
+    }
+
+    .banner {
+        height: 80vh;
+        background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('img/laut.jpg');
+        background-size: cover;
+        background-position: center;
+    }
+
+    .banner-content{
+        height: 100%;
+        /* border: solid; */
+        color: aliceblue;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .carusel-container{
+        background-color: #212529;
+        /* height: 300px; */
+        color: white;
+    }
+</style>
+
+<body>
+    <!-- nav -->
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse container" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Dropdown
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <!-- end nav -->
+
+    <!-- banner -->
+    <div class="container-fluid banner">
+        <div class="container banner-content col-lg-6" >
+            <div class="text-center">
+                <p class="fs-1">selamat datang di apakaden</p>
+                <p class="d-none d-sm-block">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius expedita ipsam saepe fuga odit laboriosam asperiores distinctio modi animi quos.
+                </p>
+                <!-- button -->
+                <button type="submit" class="btn btn-outline-dark mt-3 btn-lg">Reservasi</button>
+            </div>
+        </div>
+    </div>
+    <!-- end banner -->
+
+    <!-- accordion -->
+    <div class="my-5 container-fluid col-12 col-md-6">
+        <h2 class="text-center mb-5">kenapa harus belanja di kami</h2>
+        <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    ya begitulah 1
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum quas commodi nulla vel tempore! Eos vero corrupti incidunt tempore culpa. Ratione, ducimus unde. Eaque porro provident minima corporis laborum dolorum quod, quaerat consectetur inventore. Ratione recusandae laborum quod eos fuga quis ipsum itaque eaque officiis cupiditate, consequatur dignissimos tempore laboriosam!
+                    </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    ya begitulah 2
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum, dolorum quidem tempora nemo reiciendis reprehenderit! Earum, error sapiente iure debitis nemo impedit molestiae eligendi quas quaerat voluptatum repellat magnam. Minus sint possimus sit consequuntur quidem sed debitis ex porro eaque, ipsum velit temporibus cumque quasi quisquam saepe, voluptatem minima impedit.
+                    </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    ya begitulah 3
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab, pariatur voluptates dicta possimus tempore porro maxime rem, facere tempora repellendus odit at in eaque nesciunt veniam magnam aspernatur, laborum officiis dolore velit quae dolorum saepe aut. Veniam aliquam qui neque optio, natus quae labore nobis aspernatur magnam voluptatum magni inventore?
+                    </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsefour" aria-expanded="false" aria-controls="collapsefour">
+                        ya begitulah 4
+                    </button>
+                </h2>
+                <div id="collapsefour" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <p>
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab, pariatur voluptates dicta possimus tempore porro maxime rem, facere tempora repellendus odit at in eaque nesciunt veniam magnam aspernatur, laborum officiis dolore velit quae dolorum saepe aut. Veniam aliquam qui neque optio, natus quae labore nobis aspernatur magnam voluptatum magni inventore?
+                        </p>
+                    </div>
+                </div>
+            </div>        
+        </div>
+    </div>
+    <!-- end of accordion -->
+
+    <!-- carousel -->
+    <div class="container-fluid carusel-container py-5">
+        <div class="container">
+            <h2 class="d-flex justify-content-center mb-5">produk terbaik kami</h2>
+            <div id="carouselExampleControls" class="carousel slide col-lg-8 mx-auto d-flex justify-content-center" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleControls" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleControls" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleControls" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/laut.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>First slide label</h5>
+                        <p>Some representative placeholder content for the first slide.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="img/gambar2.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Secound slide label</h5>
+                        <p>Some representative placeholder content for the first slide.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="img/gambar3.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Third slide label</h5>
+                        <p>Some representative placeholder content for the first slide.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+            </div>
+        </div>
+    </div>
+    <!--end of carousel -->
+
+    <!-- image -->
+    <div class="container-fluid">
+        <div class="container py-5">
+            <h2 class="text-center">produk terlaris</h2>
+            <div class="col-lg-6 d-block mx-auto mt-5">
+                <img src="img/laut.jpg" class="img-fluid img-thumbnail" alt=""> 
+            </div>
+        </div>
+    </div>
+    <!-- end of bootstrap image -->
+
+    <!-- blockquote -->
+    <div class="container-fluid py-5 bg-dark">
+        <div class="container text-light text-center">
+            <h2 class="text-center mb-5">apa kata custemer kami</h2>
+            <div class="col-12">
+                <figure>
+                    <blockquote class="blockquote">
+                        <p>jadilah seperti tempe, tidak ada yang tahu</p>
+                    </blockquote>
+                    <figcaption class="blockquote-footer">
+                        Bharata <cite title="Source Title">Wayan</cite>
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="col-12">
+                <figure>
+                    <blockquote class="blockquote">
+                        <p>sibuk beres beres, ternyata yang gak beres hidup saya</p>
+                    </blockquote>
+                    <figcaption class="blockquote-footer">
+                        Bharata <cite title="Source Title">Wayan</cite>
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="col-12 ">
+                <figure>
+                    <blockquote class="blockquote">
+                        <p>kalo ada yang nanya, bilang aja udah di jalan yang benar</p>
+                    </blockquote>
+                    <figcaption class="blockquote-footer">
+                        Bharata <cite title="Source Title">Wayan</cite>
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="col-12 ">
+                <figure>
+                    <blockquote class="blockquote">
+                        <p>tidak bermateri apalagi berkuasa, soal pemikiran juga kalah</p>
+                    </blockquote>
+                    <figcaption class="blockquote-footer">
+                        Bharata <cite title="Source Title">Wayan</cite>
+                    </figcaption>
+                </figure>
+            </div>
+        </div>
+    </div>
+    <!-- end of blockquote -->
+
+    <!-- card -->
+    <div class="container-fluid py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">prodak kami</h2>
+            <div class="row">
+
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-5">
+                    <div class="card border-primary">
+                        <img src="img/gambar3.jpg" class="card-img-top"> 
+                        <div class="card-body">
+                            <h5 class="card-title">pantai di bangli</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero, consectetur Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, totam.</p>
+                            <div >
+                                <button class="btn btn-outline-primary">lihat</button>
+                                <button class="btn btn-outline-primary">Beli</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-5">
+                    <div class="card border-primary">
+                        <img src="img/gambar3.jpg" class="card-img-top"> 
+                        <div class="card-body">
+                            <h5 class="card-title">pantai di bangli</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero, consectetur Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, totam.</p>
+                            <div >
+                                <button class="btn btn-outline-primary">lihat</button>
+                                <button class="btn btn-outline-primary">Beli</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-5">
+                    <div class="card border-primary">
+                        <img src="img/gambar3.jpg" class="card-img-top"> 
+                        <div class="card-body">
+                            <h5 class="card-title">pantai di bangli</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero, consectetur Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, totam.</p>
+                            <div >
+                                <button class="btn btn-outline-primary">lihat</button>
+                                <button class="btn btn-outline-primary">Beli</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-5">
+                    <div class="card border-primary">
+                        <img src="img/gambar3.jpg" class="card-img-top"> 
+                        <div class="card-body">
+                            <h5 class="card-title">pantai di bangli</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero, consectetur Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, totam.</p>
+                            <div >
+                                <button class="btn btn-outline-primary">lihat</button>
+                                <button class="btn btn-outline-primary">Beli</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- end of card -->
+</body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</html>
