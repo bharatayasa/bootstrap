@@ -90,11 +90,56 @@
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius expedita ipsam saepe fuga odit laboriosam asperiores distinctio modi animi quos.
                 </p>
                 <!-- button -->
-                <button type="submit" class="btn btn-outline-dark mt-3 btn-lg">Reservasi</button>
+                <button type="submit" class="btn btn-outline-dark mt-3 btn-lg" data-bs-toggle="modal" data-bs-target="#exampleModal">Reservasi</button>
             </div>
         </div>
     </div>
     <!-- end banner -->
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" >
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <!-- header -->
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">formulir reservasi</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <!-- body -->
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="nama" class="form-label">Nama</label>
+                            <input type="text" class="form-control" id="nama">
+                        </div>
+                        <div class="mb-3">
+                            <label for="handpone" class="form-label">No HP</label>
+                            <input type="number" class="form-control" id="handpone">
+                        </div>
+                        <div class="mb-3">
+                            <label for="tanggal" class="form-label">Tanggal</label>
+                            <input type="date" class="form-control" id="tanggal">
+                        </div>
+                        <div class="mb-3">
+                            <label for="jam" class="form-label">Jam</label>
+                            <input type="time" class="form-control" id="jam">
+                        </div>
+                        <div class="mb-3">
+                            <label for="orang" class="form-label">Orang</label>
+                            <input type="number" class="form-control" id="orang">
+                        </div>
+                    </form>
+                </div>
+                <!-- footer -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Kirim</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- end of Modal -->
 
     <!-- accordion -->
     <div class="my-5 container-fluid col-12 col-md-6">
@@ -296,85 +341,80 @@
 
                     <div class="col-lg-9">
                         <div class="row">
-                            <div class="col-lg-3 col-md-4 col-sm-6 mb-5">
+                            
+                            <div class="col-lg-4 col-md-4 col-sm-6 mb-5">
                                 <div class="card border-primary">
                                     <img src="img/gambar3.jpg" class="card-img-top"> 
                                     <div class="card-body">
                                         <h5 class="card-title">pantai di bangli</h5>
                                         <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero, consectetur Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, totam.</p>
-                                        <div >
-                                            <button class="btn btn-outline-primary">lihat</button>
+                                        <div>
                                             <button class="btn btn-outline-primary">Beli</button>
+                                            <button class="btn btn-outline-primary dropdown-toggle" data-bs-toggle="dropdown">Lihat</button>
+                                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                            </ul>
                                         </div>
                                     </div>
                                 </div>
                             </div>
             
-                            <div class="col-lg-3 col-md-4 col-sm-6 mb-5">
+                            
+                            <div class="col-lg-4 col-md-4 col-sm-6 mb-5">
                                 <div class="card border-primary">
                                     <img src="img/gambar3.jpg" class="card-img-top"> 
                                     <div class="card-body">
                                         <h5 class="card-title">pantai di bangli</h5>
                                         <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero, consectetur Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, totam.</p>
-                                        <div >
-                                            <button class="btn btn-outline-primary">lihat</button>
+                                        <div>
                                             <button class="btn btn-outline-primary">Beli</button>
+                                            <button class="btn btn-outline-primary dropdown-toggle" data-bs-toggle="dropdown">Lihat</button>
+                                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                            </ul>
                                         </div>
                                     </div>
                                 </div>
                             </div>
             
-                            <div class="col-lg-3 col-md-4 col-sm-6 mb-5">
+                            
+                            <div class="col-lg-4 col-md-4 col-sm-6 mb-5">
                                 <div class="card border-primary">
                                     <img src="img/gambar3.jpg" class="card-img-top"> 
                                     <div class="card-body">
                                         <h5 class="card-title">pantai di bangli</h5>
                                         <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero, consectetur Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, totam.</p>
-                                        <div >
-                                            <button class="btn btn-outline-primary">lihat</button>
+                                        <div>
                                             <button class="btn btn-outline-primary">Beli</button>
+                                            <button class="btn btn-outline-primary dropdown-toggle" data-bs-toggle="dropdown">Lihat</button>
+                                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                            </ul>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-            
-                            <div class="col-lg-3 col-md-4 col-sm-6 mb-5">
+                            
+                            <div class="col-lg-4 col-md-4 col-sm-6 mb-5">
                                 <div class="card border-primary">
                                     <img src="img/gambar3.jpg" class="card-img-top"> 
                                     <div class="card-body">
                                         <h5 class="card-title">pantai di bangli</h5>
                                         <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero, consectetur Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, totam.</p>
-                                        <div >
-                                            <button class="btn btn-outline-primary">lihat</button>
+                                        <div>
                                             <button class="btn btn-outline-primary">Beli</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-lg-3 col-md-4 col-sm-6 mb-5">
-                                <div class="card border-primary">
-                                    <img src="img/gambar3.jpg" class="card-img-top"> 
-                                    <div class="card-body">
-                                        <h5 class="card-title">pantai di bangli</h5>
-                                        <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero, consectetur Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, totam.</p>
-                                        <div >
-                                            <button class="btn btn-outline-primary">lihat</button>
-                                            <button class="btn btn-outline-primary">Beli</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-lg-3 col-md-4 col-sm-6 mb-5">
-                                <div class="card border-primary">
-                                    <img src="img/gambar3.jpg" class="card-img-top"> 
-                                    <div class="card-body">
-                                        <h5 class="card-title">pantai di bangli</h5>
-                                        <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero, consectetur Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, totam.</p>
-                                        <div >
-                                            <button class="btn btn-outline-primary">lihat</button>
-                                            <button class="btn btn-outline-primary">Beli</button>
+                                            <button class="btn btn-outline-primary dropdown-toggle" data-bs-toggle="dropdown">Lihat</button>
+                                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                            </ul>
                                         </div>
                                     </div>
                                 </div>
@@ -382,7 +422,6 @@
 
                         </div>
                     </div>
-
                 </div>
             </div>
         </div>
@@ -461,8 +500,70 @@
         </div>
     </div>
     <!-- end of table -->
+
+    <!-- form -->
+    <div class="container-fluid py-5 bg-dark text-white">
+        <div class="container">
+            <h2 class="text-center mb-4">hubungi kami</h2>
+
+            <div class="offset-lg-2 col-lg-8">
+                <form action="">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <label for="namadepan" class="form-label">Nama Depan</label>
+                            <input type="text" id="namadepan" class="form-control">
+                        </div>
+                        <div class="col-lg-6">
+                            <label for="namabelakang" class="form-label">Nama Belakang</label>
+                            <input type="text" id="namadepan" class="form-control">
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="username" class="form-label">Username</label>
+                        <div class="input-group">
+                            <span class="input-group-text">@</span>
+                            <input type="text" id="username"class="form-control" autocomplete="off">
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="text" id="email" autocomplete="off" class="form-control">
+                        <label class="form-text">*email anda tidak akan kami sebarluaskan</label>
+                    </div>
+                    <div class="mb-3">
+                        <label for="tingkaturgensi" class="form-label">Tingkat Urgensi</label>
+                        <select class="form-select" name="" id="ringkaturgensi">
+                            <option value="">pilih</option>
+                            <option value="">penting</option>
+                            <option value="">normal</option>
+                            <option value="">tidak penting</option>
+                        </select>
+                    </div>
+
+                    <div class="mb-3">
+                        <input class="form-check-input" id="komplen" type="radio" name="kategori">
+                        <label class="form-check-label" for="komplen">komplen</label>
+                    </div>
+                    <div class="mb-3">
+                        <input class="form-check-input" id="saran" type="radio" name="kategori">
+                        <label class="form-check-label" for="saran">saran</label>
+                    </div>
+                    <div class="mb-3">
+                        <label for="deskripsi" class="form-label">Deskripsi</label>
+                        <textarea name="deskripsi" id="deskripsi" cols="30" rows="10" class="form-control"></textarea>
+                    </div>
+                    <div>
+                        <button class="btn btn-primary btn-block">kirim</button>
+                    </div>
+                </form>
+            </div>
+        </div>  
+    </div>
+    <!-- end of form -->
 </body>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script 
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
     <script>
         var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
             var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
